@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>TJAX-DEMO</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<!-- Jquery and Js Plugins -->
+<script type="text/javascript" src="jquery-2.1.1.js"></script>
+<script type="text/javascript" src="tjax.js"></script>
+<script type="text/javascript">
+
+	for (var i = 0; i < 100; i++) {
+
+		// modify url with your host 
+		// you need different parameters to request data and show the results
+
+	    var url = 'https://donsee.cn/URI/?action=test'+'&code='+i;
+
+	    TJAX(url,printToScreen,i,i*100);
+
+	}
+
+</script>
+</body>
+</html>
